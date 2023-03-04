@@ -1,0 +1,42 @@
+name: zoom_clone
+description: A Complete Zoom Clone with Flutter, Firebase & Jitsi Meet.  
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  firebase_core: ^2.7.0
+  firebase_auth: ^4.2.9
+  cloud_firestore: ^4.4.3
+  #jitsi_meet_wrapper: ^0.0.6
+  google_sign_in: ^6.0.1
+  jitsi_meet:
+    git:
+      url: https://github.com/Eng-NUREDDIN/jitsi_meet.git
+      path: jitsi_meet/
+      ref: master
+  intl: ^0.17.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/onboarding.jpg
+
